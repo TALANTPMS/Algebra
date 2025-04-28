@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Flash Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-container">
+        <div class="gradient-sphere gradient-sphere-1"></div>
+        <div class="gradient-sphere gradient-sphere-2"></div>
+        <div class="gradient-sphere gradient-sphere-3"></div>
+    </div>
+    <header class="header">
+        <h1>📐 Алгебра: формулы и свойства</h1>
+        <button class="shuffle-btn">🔀 Перемешать</button>
+    </header>
+    
+    <div class="single-card-container">
+        <div id="singleCard"></div>
+        <div class="card-controls">
+            <button id="prevCard" class="nav-btn" aria-label="Предыдущая карточка">←</button>
+            <span id="progress"></span>
+            <button id="nextCard" class="nav-btn" aria-label="Следующая карточка">→</button>
+        </div>
+    </div>
+    
+    <div class="history-container">
+        <h2>Просмотренные карточки</h2>
+        <div id="viewedCards" class="viewed-cards"></div>
+    </div>
+
+    <footer class="project-info">
+        <h2>О проекте</h2>
+        <div class="info-content">
+            <div class="info-section">
+                <h3>Для кого</h3>
+                <p>Для учеников 10-11 классов, студентов и всех, кто изучает алгебру и математический анализ</p>
+            </div>
+            <div class="info-section">
+                <h3>Цель проекта</h3>
+                <p>Помочь в изучении и запоминании важных математических формул через интерактивные карточки</p>
+            </div>
+            <div class="info-section">
+                <h3>Разработчик</h3>
+                <p>Прозоров Савелий, Никулин Никита</p>
+                <p>Учебный проект Skillset Hackathon</p>
+                <p>© 2025 Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cards-data.js"></script>
+    <script src="script.js"></script>
+    <div class="noise-overlay"></div>
+</body>
+</html>
